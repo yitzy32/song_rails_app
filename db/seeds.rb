@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-100.times do
-  song = Song.create(title: FFaker::Music.song, artist: FFaker::Music.artist, album: FFaker::Music.album, genre: FFaker::Music.genre)
-  song.save
-end
+# 100.times do
+#   song = Song.create(title: FFaker::Music.song, artist: FFaker::Music.artist, album: FFaker::Music.album, genre: FFaker::Music.genre, year: rand(1960..2020)
+#   song.save
+# end
