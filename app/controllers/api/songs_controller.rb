@@ -20,4 +20,14 @@ class Api::SongsController < ApplicationController
     )
     render "show.json.jb"
   end
+
+  def update
+    @song = Song.find_by(id: 88)
+    @song.title = params[:title]
+    @song.artist = params[:artist]
+    @song.album = params[:album]
+    @song.genre = params[:genre]
+
+    render "show.json.jb"
+  end
 end
