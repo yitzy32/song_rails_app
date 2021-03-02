@@ -9,4 +9,15 @@ class Api::SongsController < ApplicationController
     @song = Song.find_by(id: id)
     render "show.json.jb"
   end
+
+  def create
+    @song = Song.new(
+      id: params["id"],
+      title: params["title"],
+      artist: params["artist"],
+      album: params["album"],
+      genre: params["genre"],
+    )
+    render "show.json.jb"
+  end
 end
